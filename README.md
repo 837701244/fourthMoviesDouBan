@@ -1,16 +1,16 @@
 # vue2
 
-## Project setup
+## Project setup配置项目所需要的包
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development热启动
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for production打包
 ```
 npm run build
 ```
