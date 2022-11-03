@@ -96,14 +96,17 @@
               <el-submenu index="5">
                 <template slot="title">
                   <i class="el-icon-s-tools"></i>
-                  <span>订单管理</span>
+                  <span>场次订单管理</span>
                 </template>
 
                   <el-menu-item index="5-1">
                     <router-link to="/admin" >订单增加</router-link>
                   </el-menu-item>
                   <el-menu-item index="5-2">
-                    <router-link to="/admin/usermanage" >订单列表</router-link>
+                    <router-link to="/admin/ordermanage" >订单管理</router-link>
+                  </el-menu-item>
+                  <el-menu-item index="5-3">
+                    <router-link to="/admin/sessionmanage" >场次管理</router-link>
                   </el-menu-item>
 
               </el-submenu>
@@ -132,7 +135,7 @@ export default {
   name: "AdminView",
   data() {
     return {
-      openeds:['1'],
+      openeds:['5'],
       sty:{
         height:window.innerHeight - 50+"px",
         overflow:"auto"

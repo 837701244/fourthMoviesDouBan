@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import axios from "axios";
+import axios from "../plugins/axios.js";
 
 import adminModule from "./modules/adminModule.js";
 

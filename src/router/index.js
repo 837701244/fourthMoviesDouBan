@@ -22,6 +22,11 @@ const routes = [
     component: ()=> import("../views/ui/ElementView")
   },
   {
+    path:"/testcity",
+    name:"testcity",
+    component: ()=> import("../views/testcity")
+  },
+  {
     path:"/home",
     component:HomeView,
     children:[
@@ -169,7 +174,19 @@ const routes = [
         path:"ordermanage",
         name:"ordermanage",
         component:()=>import("../views/admin/OrdermanageView")
+      },
+      {
+        path:"sessionmanage",
+        name:"sessionmanage",
+        component:()=>import("../views/admin/SessionmanageView")
+      },
+      {
+        path:"updateSess/:id",
+        props: true,
+        name:"updateSess",
+        component:()=>import("../views/admin/SessAndOrder/updateSessView")
       }
+
     ]
   },
 

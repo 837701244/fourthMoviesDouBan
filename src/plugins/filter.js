@@ -1,9 +1,10 @@
 import Vue from "vue";
 
 
-Vue.filter("skSetDate",function (self,str="yyyy年MM月dd日 HH mm ss") {
+Vue.filter("skSetDate",function (self,str="yyyy年MM月dd日 HH:mm:ss") {
     console.log(self)
     let skDate=new Date(self);
+    console.log(skDate)
     //获取时间对象
     let year = skDate.getFullYear()   //获取年
         , moth = skDate.getMonth() + 1   //获取月

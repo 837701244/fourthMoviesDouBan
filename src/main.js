@@ -10,7 +10,7 @@ import './plugins/filter';//加载过滤器插件
 
 import "./plugins/directive"//加载自定义指令
 
-import axios  from "axios";
+import axios  from "./plugins/axios.js";//引入封装好的axios
 Vue.prototype.axios = axios;
 
 
